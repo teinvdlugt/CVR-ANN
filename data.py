@@ -356,5 +356,6 @@ class Data(object):
             [4], [4], [6], [7], [9],
             [3], [3], [4], [5], [7],
             [2], [2], [3], [4], [5]), dtype=float)
+        self.y_data /= np.amax(self.y_data)
 
         print self.x_data.shape, self.y_data.shape
